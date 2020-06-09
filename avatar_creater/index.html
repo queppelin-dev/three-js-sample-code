@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="character">
+        <div class="form-group">
+            <select id="character" class="form-control character_selector">
+                <option value="M" selected>Male</option>
+                <option value="F" >Female</option>
+                <option value="A" >Andro</option>
+            </select>
+        </div>
+    </div>
+    <div class="controller">
+        <div class="d-flex">
+            <img id="top_CONTROL" class="img-thumbnail" src="./images/shirt.png" alt="">
+            <div class="topstray"></div>
+        </div>
+        <div class="d-flex">
+            <img id="bottom_CONTROL" class="img-thumbnail" src="./images/jeans.png" alt="">
+            <div class="bottomstray"></div>
+        </div>
+        <div class="d-flex">
+            <img id="boot_CONTROL" class="img-thumbnail" src="./images/boot.png" alt="">
+            <div class="bootstray"></div>
+        </div>
+            <img class="img-thumbnail" data-selected="bodyMeshes" src="./images/body.png" alt="">
+            <img class="img-thumbnail" data-selected="eyeMeshes" src="./images/eye.png" alt="">  
+            <img class="img-thumbnail" src="./images/face.png" alt="">  
+            <img class="img-thumbnail" src="./images/hair.svg" alt="">     
+    </div>
+    <div class="color-tray" id="colortray"></div>
+    
+    <script type="module" src="./avatarjs/gltf.js"></script>
+    <script type="module" src="./avatarjs/charcter.js"></script>
+    <script type="module" src="./avatarjs/wearable.js"></script>
+    <!-- <script type="module" src="./avatarjs/background.js"></script> -->
+
+</body>
+</html>
